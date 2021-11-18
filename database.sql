@@ -22,7 +22,7 @@ CREATE TABLE ability (
 );
 
 CREATE TABLE train (
-    train_Name varchar(25) not null
+    train_Name varchar(25) not null,
     evYield varchar(25) not null,
     catchRate int not null,
     baseFriendship int not null,
@@ -49,7 +49,7 @@ CREATE TABLE typedefenses (
     dragon float not null,
     dark float not null,
     steel float not null,
-    normal float not null,
+    normal float not null
 );
 
 CREATE TABLE moves (
@@ -72,3 +72,7 @@ CREATE TABLE basestats (
     spAttack int not null,
     total int not null
 );
+
+INSERT INTO pokemon(p_Name,nationalNumber,typeOne,typeTwo,generation,p_Description)
+VALUES('bulbasaur',1,'grass','poison',1,'For some time after its birth, it grows by taking nourishment from the seed on its back.'),
+('',2,'','',1,'');
