@@ -1,10 +1,10 @@
 CREATE TABLE pokemon (
     p_Name  varchar(25) not null,
     nationalNumber int not null,
-    p_Description varchar(120) not null,
     typeOne varchar(15) not null,
     typeTwo varchar(15),
-    generation int not null
+    generation int not null,
+    p_Description varchar(120) not null
 );
 
 CREATE TABLE breed (
@@ -53,13 +53,13 @@ CREATE TABLE typedefenses (
 );
 
 CREATE TABLE moves (
-    type varchar(20) not null,
     m_Name varchar(40) not null,
+    type varchar(20) not null,
     power int,
     category varchar(25),
-    effect varchar(120),
     PP int not null,
-    accuracy int
+    accuracy int,
+    effect varchar(120)
 );
 
 CREATE TABLE basestats (
@@ -73,6 +73,3 @@ CREATE TABLE basestats (
     total int not null
 );
 
-INSERT INTO pokemon(p_Name,nationalNumber,typeOne,typeTwo,generation,p_Description)
-VALUES('bulbasaur',1,'grass','poison',1,'For some time after its birth, it grows by taking nourishment from the seed on its back.'),
-('',2,'','',1,'');
