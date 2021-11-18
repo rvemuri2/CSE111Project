@@ -248,7 +248,7 @@ insert into breed (br_Name, eggGroupOne, eggGroupTwo, genderMale_Percent, gender
 VALUES
 ('bulbasaur', 'grass', 'monster', 87.5, 12.5, 20),
 ('ivysaur', 'grass', 'monster', 87.5, 12.5, 20),
-('venasaur', 'grass', 'monster', 87.5, 12.5, 20),
+('venusaur', 'grass', 'monster', 87.5, 12.5, 20),
 ('charmander', 'dragon', 'monster', 87.5, 12.5, 20),
 ('charmeleon', 'dragon', 'monster', 87.5, 12.5, 20),
 ('charizard', 'dragon', 'monster', 87.5, 12.5, 20),
@@ -304,7 +304,7 @@ insert into train (train_Name, evYield, catchRate, baseFriendship, baseExperienc
 VALUES
 ('bulbasaur', '1 Special Attack', 45, 50, 64, 'Medium Slow'),
 ('ivysaur','1 Special Attack, 1 Special Defense',45,50,142,'Medium Slow'),
-('venasaur', '2 Special Attack, 1 Special Defense',45,50,236,'Medium Slow'),
+('venusaur', '2 Special Attack, 1 Special Defense',45,50,236,'Medium Slow'),
 ('charmander', '1 Speed',45,50,62,'Medium Slow'),
 ('charmeleon', '1 Special Attack, 1 Speed',45,50,142,'Medium Slow'),
 ('charizard', '3 Special Attack',45,50,240,'Medium Slow'),
@@ -332,7 +332,7 @@ insert into basestats(b_Name, hp, attack, defense, spAttack, spDefense, speed, t
 VALUES
 ('bulbasaur', 45, 49, 49, 65, 65, 45, 318),
 ('ivysaur', 60, 62, 63, 80, 80, 60, 405), 
-('venasaur', 80, 82, 83, 100, 100, 80, 525),
+('venusaur', 80, 82, 83, 100, 100, 80, 525),
 ('charmander', 39, 52, 43, 60, 50, 65, 309),
 ('charmeleon', 58, 64, 58, 80, 65, 80, 405),
 ('charizard', 78, 84, 78, 109, 85, 100, 534),
@@ -384,10 +384,34 @@ VALUES
 ('blastoise', 1, 0.5, 0.5, 2, 2, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.5, 1), 
 ('bulbasaur', 1, 2, 0.5, 0.5, 0.5, 2, 0.5, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 0.5), 
 ('ivysaur', 1, 2, 0.5, 0.5, 0.5, 2, 0.5, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 0.5),
-('venasaur', 1, 2, 0.5, 0.5, 0.5, 2, 0.5, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 0.5), 
+('venusaur', 1, 2, 0.5, 0.5, 0.5, 2, 0.5, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 0.5), 
 ('caterpie', 1, 2, 1, 1, 0.5, 1, 0.5, 1, 0.5, 2, 1, 1, 2, 1, 1, 1, 1, 1), 
 ('metapod', 1, 2, 1, 1, 0.5, 1, 0.5, 1, 0.5, 2, 1, 1, 2, 1, 1, 1, 1, 1), 
 ('butterfree', 1, 2, 1, 2, 0.25, 2, 0.25, 1, 0, 2, 1, 0.5, 4, 1, 1, 1, 1, 1), 
 ('weedle', 1, 2, 1, 1, 0.25, 1, 0.25, 0.5, 1, 2, 2, 0.5, 2, 1, 1, 1, 1, 0.5), 
 ('kakuna', 1, 2, 1, 1, 0.25, 1, 0.25, 0.5, 1, 2, 2, 0.5, 2, 1, 1, 1, 1, 0.5),
 ('beedrill', 1, 2, 1, 1, 0.25, 1, 0.25, 0.5, 1, 2, 2, 0.5, 2, 1, 1, 1, 1, 0.5); 
+
+insert into pokemonAbility (p_Name, a_Name)
+VALUES
+('bulbasaur', 'Overgrow'),
+('bulbasaur', 'Chlorophyll'),
+('ivysaur', 'Overgrow'),
+('ivysaur', 'Chlorophyll'),
+('venusaur', 'Overgrow'),
+('venusaur', 'Chlorophyll'),
+('charmander', 'Blaze'),
+('charmander', 'Solar Power'),
+('charmeleon', 'Blaze'),
+('charmeleon', 'Solar Power'),
+('charizard', 'Blaze'),
+('charizard', 'Solar Power');
+
+insert into pokemonMoves (pm_Name, m_Name)
+VALUES
+('bulbasaur', 'Growl'),
+('bulbasaur', 'Tackle'),
+('bulbasaur', 'Vine Whip'),
+('bulbasaur', 'Growth'),
+('bulbasaur', 'Leech Seed'),
+('bulbasaur', 'Razor Leaf');
