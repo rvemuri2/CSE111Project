@@ -1,0 +1,9 @@
+DROP TABLE pokemon;
+DROP TABLE breed;
+DROP TABLE ability;
+DROP TABLE pokemonAbility;
+DROP TABLE pokemonMoves;
+DROP TABLE train;
+DROP TABLE typeDefenses;
+DROP TABLE moves;
+DROP TABLE baseStats;
