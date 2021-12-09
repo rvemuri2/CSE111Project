@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "/static/style.css">
+        <title>Pokedex</title>
+    </head>
+    <body>
+        <h1>First Generation Pokedex</h1>
+        <div class = "center">
+            <h2>Search by:</h2>
+            <form action= "http://127.0.0.1:5000/pokemonName" method = "post">
+                <label for="pokeName">Pokemon's Name: </label>
+                <input type="text" name="PokeName" />
+                <div class = "buttonBox">
+                    <button type="submit" class = "all_Buttons" value = "Submit">Search</button>
+                </div>
+            </form>
+            <br><br>
+            <form action= "http://127.0.0.1:5000/pokemonNumber" method = "post">
+                <label for="pokeNumber">Pokemon's National Number: </label>
+                <input type="text" name="PokeNumber" />
+                <div class = "buttonBox">
+                    <button type="submit" class = "all_Buttons" value = "Submit">Search</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
