@@ -1,7 +1,7 @@
 h1{
     text-align: center;
     font-style: italic;
-    color: blue;
+    color: black;
     margin: 10px;
     font-size: 50px;
 }
@@ -17,8 +17,8 @@ h1{
     justify-content: center;
 }
 .all_Buttons{
-    background-color: cyan;
-    
+    background-color: #c12026;
+    font-weight: bold;
 }
 
 .background {
@@ -28,7 +28,7 @@ h1{
 h2{
     text-align: center;
     font-style: italic;
-    color: blue;
+    color: #c12026;
     margin: 10px;
     font-size: 26px;
 }
@@ -47,13 +47,13 @@ h2{
 }
 
 thead{
-    background-color:rgb(13, 84, 218);
+    background-color:#c12026;
     text-align: center;
     font-weight: bold;
 }
 
 tbody{
-    background-color:cornflowerblue;
+    background-color:#e48286;
     text-align: center;
 }
 
