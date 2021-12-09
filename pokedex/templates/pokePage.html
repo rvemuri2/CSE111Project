@@ -7,15 +7,18 @@
         {% endfor %}
     </head>
     <body>
-      <div class = "home">
-         <form action = "http://127.0.0.1:5000/" method = "get">
-             <div class = "buttonBox">
-                 <button type="submit" class = "all_Buttons" value = "Submit">Home Page</button>
-             </div>
-         </form>
-     </div>
+        <div class = "home">
+            <form action = "http://127.0.0.1:5000/" method = "get">
+                <div class = "buttonBox">
+                    <button type="submit" class = "all_Buttons" value = "Submit">Home Page</button>
+                </div>
+            </form>
+        </div>
         {% for row in name %}
         <h1>{{row[0]}}</h1>
+        <div class = "picture">
+            <img src="/static/pictures/{{row[0]}}.jpg"/>
+        </div>
         {% endfor %}
         <div class = "center">
             <div class = "pokeDescription">
@@ -134,54 +137,54 @@
             <div class = "typeDefenses">
                 <table>
                     <thead>
-                       <td>normal</td>
-                       <td>fire</td>
-                       <td>water</td>
-                       <td>electric</td>
-                       <td>grass</td>
-                       <td>ice</td>
-                       <td>fighting</td>
-                       <td>poison</td>
-                       <td>ground</td>
+                       <td bgcolor="#aa9">normal</td>
+                       <td bgcolor="#f42">fire</td>
+                       <td bgcolor="#39f">water</td>
+                       <td bgcolor="#fc3">electric</td>
+                       <td bgcolor="#7c5">grass</td>
+                       <td bgcolor="#6cf">ice</td>
+                       <td bgcolor="#b54">fighting</td>
+                       <td bgcolor="#a59">poison</td>
+                       <td bgcolor="#db5">ground</td>
                     </thead>
                     <tbody>
                         {% for row in results5 %}
                         <tr>
-                           <td>{{row[0]}}</td>
-                           <td>{{row[1]}}</td>
-                           <td>{{row[2]}}</td>
-                           <td>{{row[3]}}</td>	
-                           <td>{{row[4]}}</td>
-                           <td>{{row[5]}}</td>
-                           <td>{{row[6]}}</td>
-                           <td>{{row[7]}}</td>
-                           <td>{{row[8]}}</td>
+                           <td bgcolor="#aa9">{{row[0]}}</td>
+                           <td bgcolor="#f42">{{row[1]}}</td>
+                           <td bgcolor="#39f">{{row[2]}}</td>
+                           <td bgcolor="#fc3">{{row[3]}}</td>	
+                           <td bgcolor="#7c5">{{row[4]}}</td>
+                           <td bgcolor="#6cf">{{row[5]}}</td>
+                           <td bgcolor="#b54">{{row[6]}}</td>
+                           <td bgcolor="#a59">{{row[7]}}</td>
+                           <td bgcolor="#db5">{{row[8]}}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
                     <thead>
-                        <td>flying</td>
-                        <td>psychic</td>
-                        <td>bug</td>
-                        <td>rock</td>
-                        <td>ghost</td>
-                        <td>dragon</td>
-                        <td>dark</td>
-                        <td>steel</td>
-                        <td>fairy</td>
+                        <td bgcolor="#89f">flying</td>
+                        <td bgcolor="#f59">psychic</td>
+                        <td bgcolor="#ab2">bug</td>
+                        <td bgcolor="#ba6">rock</td>
+                        <td bgcolor="#66b">ghost</td>
+                        <td bgcolor="#76e">dragon</td>
+                        <td bgcolor="#754">dark</td>
+                        <td bgcolor="#aab">steel</td>
+                        <td bgcolor="#e9e">fairy</td>
                      </thead>
                      <tbody>
                         {% for row in results5 %}
                         <tr>
-                           <td>{{row[9]}}</td>
-                           <td>{{row[10]}}</td>
-                           <td>{{row[11]}}</td>
-                           <td>{{row[12]}}</td>	
-                           <td>{{row[13]}}</td>
-                           <td>{{row[14]}}</td>
-                           <td>{{row[15]}}</td>
-                           <td>{{row[16]}}</td>
-                           <td>{{row[17]}}</td>
+                           <td bgcolor="#89f">{{row[9]}}</td>
+                           <td bgcolor="#f59">{{row[10]}}</td>
+                           <td bgcolor="#ab2">{{row[11]}}</td>
+                           <td bgcolor="#ba6">{{row[12]}}</td>	
+                           <td bgcolor="#66b">{{row[13]}}</td>
+                           <td bgcolor="#76e">{{row[14]}}</td>
+                           <td bgcolor="#754">{{row[15]}}</td>
+                           <td bgcolor="#aab">{{row[16]}}</td>
+                           <td bgcolor="#e9e">{{row[17]}}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
