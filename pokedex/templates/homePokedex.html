@@ -8,6 +8,12 @@
         <h1 class = "homepage">First Generation Pokedex</h1>
         <div class = "center">
             <h2 class = "firstpage">Search by:</h2>
+            <form action= "http://127.0.0.1:5000/allpokemon" method = "post">
+                <div class = "buttonBox">
+                    <button type="submit" class = "all_Buttons" value = "Submit">All Pokemon</button>
+                </div>
+            </form>
+            <br><br>
             <form action= "http://127.0.0.1:5000/pokemonName" method = "post">
                 <label for="pokeName">Pokemon's Name: </label>
                 <input type="text" name="PokeName" />
@@ -40,6 +46,14 @@
                 </div>
             </form>
             <br><br>
+            <form action= "http://127.0.0.1:5000/pokemonMoves" method = "post">
+                <label for="pokeMov">Pokemon's Move: </label>
+                <input type="text" name="PokeMov" />
+                <div class = "buttonBox">
+                    <button type="submit" class = "all_Buttons" value = "Submit">Search</button>
+                </div>
+            </form>
+            <br><br>
             <form action= "http://127.0.0.1:5000/pokemonMoveBreed" method = "post">
                 <label for="pokeMove">Pokemon's Move: </label>
                 <input type="text" name="PokeMove" />
@@ -51,21 +65,15 @@
                 </div>
             </form>
             <br><br>
-            <form action= "http://127.0.0.1:5000/allpokemon" method = "post">
-                <div class = "buttonBox">
-                    <button type="submit" class = "all_Buttons" value = "Submit">All Pokemon</button>
-                </div>
-            </form>
-            <br><br>
             <form action= "http://127.0.0.1:5000/pokemonAbilityStats" method = "post">
-                <label for="pokeAbility">Pokemon's Ability: </label>
-                <input type="text" name="PokeAbility" />
+                <label for="pokeAttack">Pokemon's Min attack stat: </label>
+                <input type="text" name="PokeAttack" />
                 <br><br>
-                <label for="pokeTotal">Pokemon's Minimum total stat: </label>
+                <label for="pokeTotal">Pokemon's Min total stat: </label>
                 <input type="text" name="PokeTotal" />
                 <br><br>
-                <label for="pokeAttack">Pokemon's Minimum attack stat: </label>
-                <input type="text" name="PokeAttack" />
+                <label for="pokeAbility">Pokemon's Ability: </label>
+                <input type="text" name="PokeAbility" />
                 <div class = "buttonBox">
                     <button type="submit" class = "all_Buttons" value = "Submit">Search</button>
                 </div>
