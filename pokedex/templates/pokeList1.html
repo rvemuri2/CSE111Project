@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "/static/style.css">
+        <title>{{ name }} and {{ name1 }}</title>
+    </head>
+    <body>
+        <div class = "home">
+            <form action = "http://127.0.0.1:5000/" method = "get">
+                <div class = "buttonBox">
+                    <button type="submit" class = "all_Buttons" value = "Submit">Home Page</button>
+                </div>
+            </form>
+        </div>
+        <h1>{{ name }} and {{ name1 }}</h1>
+        <div class = "center">
+            <div class = "pokeDescription">
+                <table>
+                    <thead>
+                       <td>Name</td>
+                       <td>National Number</td>
+                       <td>Egg Group One</td>
+                       <td>Egg Group Two</td>
+                       <td>Description</td>
+                    </thead>
+                    <tbody>
+                        {% for row in results %}
+                        <tr>
+                           <td><a href = "{{ url_for('pokeName', name = row[0]) }}">{{row[0]}}</a></td>
+                           <td>{{row[1]}}</td>
+                           <td>{{row[2]}}</td>
+                           <td>{{row[3]}}</td>	
+                           <td>{{row[4]}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                 </table>
+            </div>
+        </div>
+    </body>
+</html>

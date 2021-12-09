@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "/static/style.css">
+        {% for row in name %}
+        <title>{{row[0]}}</title>
+        {% endfor %}
+    </head>
+    <body>
+      <div class = "home">
+         <form action = "http://127.0.0.1:5000/" method = "get">
+             <div class = "buttonBox">
+                 <button type="submit" class = "all_Buttons" value = "Submit">Home Page</button>
+             </div>
+         </form>
+     </div>
+        {% for row in name %}
+        <h1>{{row[0]}}</h1>
+        {% endfor %}
+        <div class = "center">
+            <div class = "pokeDescription">
+                <table>
+                    <thead>
+                       <td>National Number</td>
+                       <td>TypeOne</td>
+                       <td>TypeTwo</td>
+                       <td>Generation</td>
+                       <td>Description</td>
+                    </thead>
+                    <tbody>
+                        {% for row in results %}
+                        <tr>
+                           <td>{{row[0]}}</td>
+                           <td>{{row[1]}}</td>
+                           <td>{{row[2]}}</td>
+                           <td>{{row[3]}}</td>	
+                           <td>{{row[4]}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                 </table>
+            </div>
+            <h2>Abilities:</h2>
+            <div class = "abilities">
+                <table>
+                    <thead>
+                       <td>Ability</td>
+                       <td>Description</td>
+                    </thead>
+                    <tbody>
+                        {% for row in results1 %}
+                        <tr>
+                           <td>{{row[0]}}</td>
+                           <td>{{row[1]}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                 </table>
+            </div>
+            <h2>Base Stats:</h2>
+            <div class = "pokeStats">
+                <table>
+                    <thead>
+                       <td>Attack</td>
+                       <td>Defense</td>
+                       <td>Hp</td>
+                       <td>Speed</td>
+                       <td>Special Defense</td>
+                       <td>Special Attack</td>
+                       <td>Total</td>
+                    </thead>
+                    <tbody>
+                        {% for row in results2 %}
+                        <tr>
+                           <td>{{row[0]}}</td>
+                           <td>{{row[1]}}</td>
+                           <td>{{row[2]}}</td>
+                           <td>{{row[3]}}</td>	
+                           <td>{{row[4]}}</td>
+                           <td>{{row[5]}}</td>
+                           <td>{{row[6]}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                 </table>
+            </div>
+            <h2>Training:</h2>
+            <div class = "train">
+                <table>
+                    <thead>
+                       <td>EV Yield</td>
+                       <td>Catch Rate</td>
+                       <td>Base Friendship</td>
+                       <td>Base Exp.</td>
+                       <td>Growth Rate</td>
+                    </thead>
+                    <tbody>
+                        {% for row in results3 %}
+                        <tr>
+                           <td>{{row[0]}}</td>
+                           <td>{{row[1]}}</td>
+                           <td>{{row[2]}}</td>
+                           <td>{{row[3]}}</td>	
+                           <td>{{row[4]}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                 </table>
+            </div>
+            <h2>Breeding:</h2>
+            <div class = "breed">
+                <table>
+                    <thead>
+                       <td>Egg Group One</td>
+                       <td>Egg Group Two</td>
+                       <td>Gender Percentage Male</td>
+                       <td>Gender Percentage Female</td>
+                       <td>Egg Cycles</td>
+                    </thead>
+                    <tbody>
+                        {% for row in results4 %}
+                        <tr>
+                           <td>{{row[0]}}</td>
+                           <td>{{row[1]}}</td>
+                           <td>{{row[2]}}</td>
+                           <td>{{row[3]}}</td>	
+                           <td>{{row[4]}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                 </table>
+            </div>
+            <h2>Type Defenses:</h2>
+            <div class = "typeDefenses">
+                <table>
+                    <thead>
+                       <td>normal</td>
+                       <td>fire</td>
+                       <td>water</td>
+                       <td>electric</td>
+                       <td>grass</td>
+                       <td>ice</td>
+                       <td>fighting</td>
+                       <td>poison</td>
+                       <td>ground</td>
+                    </thead>
+                    <tbody>
+                        {% for row in results5 %}
+                        <tr>
+                           <td>{{row[0]}}</td>
+                           <td>{{row[1]}}</td>
+                           <td>{{row[2]}}</td>
+                           <td>{{row[3]}}</td>	
+                           <td>{{row[4]}}</td>
+                           <td>{{row[5]}}</td>
+                           <td>{{row[6]}}</td>
+                           <td>{{row[7]}}</td>
+                           <td>{{row[8]}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    <thead>
+                        <td>flying</td>
+                        <td>psychic</td>
+                        <td>bug</td>
+                        <td>rock</td>
+                        <td>ghost</td>
+                        <td>dragon</td>
+                        <td>dark</td>
+                        <td>steel</td>
+                        <td>fairy</td>
+                     </thead>
+                     <tbody>
+                        {% for row in results5 %}
+                        <tr>
+                           <td>{{row[9]}}</td>
+                           <td>{{row[10]}}</td>
+                           <td>{{row[11]}}</td>
+                           <td>{{row[12]}}</td>	
+                           <td>{{row[13]}}</td>
+                           <td>{{row[14]}}</td>
+                           <td>{{row[15]}}</td>
+                           <td>{{row[16]}}</td>
+                           <td>{{row[17]}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                 </table>
+            </div>
+            <h2>Learnable Moves:</h2>
+            <div class = "moves">
+                <table>
+                    <thead>
+                       <td>Move</td>
+                       <td>Type</td>
+                       <td>Category</td>
+                       <td>Power</td>
+                       <td>Accuracy</td>
+                       <td>PP</td>
+                       <td>Effect</td>
+                    </thead>
+                    <tbody>
+                        {% for row in results6 %}
+                        <tr>
+                           <td>{{row[0]}}</td>
+                           <td>{{row[1]}}</td>
+                           <td>{{row[2]}}</td>
+                           <td>{{row[3]}}</td>	
+                           <td>{{row[4]}}</td>
+                           <td>{{row[5]}}</td>
+                           <td>{{row[6]}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                 </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -8,7 +8,7 @@ CREATE TABLE pokemon (
 );
 
 CREATE TABLE breed (
-    br_Name  varchar(25) not null,
+    br_Name  varchar(25) not null UNIQUE,
     eggGroupOne varchar(15) not null,
     eggGroupTwo varchar(15),
     genderMale_Percent float,
@@ -37,7 +37,7 @@ CREATE TABLE pokemonMoves (
 );
 
 CREATE TABLE train (
-    train_Name varchar(25) not null,
+    train_Name varchar(25) not null UNIQUE,
     evYield varchar(25) not null,
     catchRate int not null,
     baseFriendship int not null,
@@ -47,7 +47,7 @@ CREATE TABLE train (
 );
 
 CREATE TABLE typeDefenses (
-    type_Name varchar(25) not null,
+    type_Name varchar(25) not null UNIQUE,
     normal float not null,
     fire float not null,
     water float not null,
@@ -80,7 +80,7 @@ CREATE TABLE moves (
 );
 
 CREATE TABLE baseStats (
-    b_Name varchar(25) not null,
+    b_Name varchar(25) not null UNIQUE,
     attack int not null,
     defense int not null,
     hp int not null,

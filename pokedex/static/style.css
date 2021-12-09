@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    font-style: italic;
+    color: blue;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.all_Buttons{
+    background-color: cyan;
+    
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    color: blue;
+    margin: 10px;
+    font-size: 26px;
+}
+.pokeDescription,.pokeStats,.abilities,.train,.breed,.typeDefenses,.moves{
+    display: flex;
+    justify-content: center;
+}
+
+thead{
+    background-color:rgb(13, 84, 218);
+    text-align: center;
+    
+}
+
+tbody{
+    background-color:cornflowerblue;
+    text-align: center;
+}
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
