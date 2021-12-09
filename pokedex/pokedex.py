@@ -250,6 +250,20 @@ def pokemonAbility():
     result = cur.execute(query).fetchall()
     return render_template('pokeList.html', name = pokeAbility, results = result)
 
+@app.route('/pokemonMoves', methods = ['POST'])
+def pokemonMoves():
+    pokeMov = request.form['PokeMov']
+
+    query = f"""SELECT pokemon.p_Name, nationalNumber,typeOne,typeTwo,p_Description
+                FROM pokemon, moves, pokemonMoves
+                WHERE moves.m_Name = "{pokeMov}"
+                and pokemonMoves.m_Name = moves.m_Name
+                and pokemon.p_Name = pokemonMoves.pm_Name
+                ;"""
+    cur = conn.cursor()
+    result = cur.execute(query).fetchall()
+    return render_template('pokeList.html', name = pokeMov, results = result)
+
 @app.route('/pokemonMoveBreed', methods = ['POST'])
 def pokemonMoveBreed():
     pokeMove = request.form['PokeMove']
